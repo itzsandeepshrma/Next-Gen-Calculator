@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #101820;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: 0.3s;
+}
+
+/* Calculator Container */
+.calculator {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px cyan;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+/* Title */
+.title {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: cyan;
+    text-shadow: 0px 0px 8px cyan;
+}
+
+/* Display Input */
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: black;
+    color: cyan;
+    box-shadow: inset 0px 0px 8px cyan;
+}
+
+/* Buttons Grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+/* Buttons */
+button {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+    border: none;
+    border-radius: 8px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.4);
+}
+
+/* Button Hover Effects */
+button:hover {
+    background: cyan;
+    color: black;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px cyan;
+}
+
+/* Operator Buttons */
+.operator {
+    background: orange;
+}
+
+.operator:hover {
+    background: yellow;
+    color: black;
+    box-shadow: 0px 0px 15px yellow;
+}
+
+/* Equal Button */
+.equal {
+    background: limegreen;
+    grid-column: span 2;
+}
+
+.equal:hover {
+    background: lightgreen;
+    color: black;
+    box-shadow: 0px 0px 15px limegreen;
+}
+
+/* Dark Mode Button */
+#darkModeToggle {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background: cyan;
+    color: black;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#darkModeToggle:hover {
+    background: yellow;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: black;
+}
+
+.dark-mode .calculator {
+    box-shadow: 0 0 15px magenta;
+}
+
+.dark-mode button {
+    box-shadow: 0px 4px 10px rgba(255, 0, 255, 0.4);
+}
+
+.dark-mode button:hover {
+    background: magenta;
+    color: black;
+    box-shadow: 0px 0px 15px magenta;
+}
